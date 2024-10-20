@@ -221,32 +221,41 @@ wilcox.test(data_ce$Completeness, data_nce$Completeness, paired = FALSE)
 
 # Effect size
 
-In other words, the farther the effect size from zero, the larger the difference between the two
-distributions
 
-Reason for **effect size**:
+**Definition:**
+Effect size is a quantitative measure that indicates the **magnitude** of a difference or relationship between two groups or variables. Unlike p-values, which only signify whether a difference is statistically significant, effect size reveals **how large or meaningful** that difference is in practical terms.
 
--   If the **hypotheses** are *rejected* we may draw conclusions regarding the influence of the
-    `independent variables` on the `dependent variables.`
+**Importance:**
+Effect size is crucial because it provides insight into the **practical significance** of research findings, not just their statistical significance. This distinction helps researchers and practitioners understand the real-world impact of their results.
 
--   even if the results of the experiment may be statistically significant, it is not necessarily
-    that the result is of any practical importance $\longrightarrow$ It is necessary to study the
-    observed effect size of different treatments and based on that draw conclusions and present
-    recommendations.
+**Reasons for Assessing Effect Size:**
 
--   
+1. **Interpreting Hypothesis Testing:**
+   - When **hypotheses** are rejected, effect size allows us to determine the extent to which **independent variables** influence **dependent variables**.
+   
+2. **Evaluating Practical Significance:**
+   - A result may be **statistically significant** without being practically important. Assessing the effect size ensures that the observed differences or relationships are meaningful and can inform decisions, recommendations, or further research.
 
-Effect - size, distance between two distributions (difference between them) values:
+**Interpreting Effect Size:**
 
--   Negligible: $|d| < 0.148$
+Effect size can be conceptualized as the **distance between two distributions** (i.e., the difference between them). Below are the guidelines for interpreting the absolute value of effect size (|d|):
 
--   Small: $0.148 <= |d| < 0.33$
+- **Negligible:** |d| < 0.148
+- **Small:** 0.148 ≤ |d| < 0.33
+- **Medium:** 0.33 ≤ |d| < 0.474
+- **Large:** |d| ≥ 0.474
 
--   Medium: $0.33 <= |d| < 0.474$
+*Note:* These guidelines apply equally to positive and negative values of effect size.
 
--   Large: $|d| >= 0.474$
+**Key Takeaways:**
 
-The same guidelines do also apply for negative values.
+- **Magnitude Matters:** The farther the effect size is from zero, the larger and more meaningful the difference between the two groups or variables.
+  
+- **Beyond Significance:** While p-values indicate **whether** an effect exists, effect size indicates **how much** of an effect there is, providing a fuller understanding of the research findings.
+
+**Example:**
+
+Suppose a study finds a statistically significant difference in test scores between two teaching methods with a p-value of 0.03. However, the effect size (Cohen's d) is 0.20, which falls into the **small** category. This suggests that while the difference is statistically significant, the practical impact of the teaching methods is minimal.
 
 ## Cohen’s d effect size [Parametric]
 
